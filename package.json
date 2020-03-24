@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "start": "node src/cli.js",
-    "prebuild": "cd src/functions/content-calendar && npm install"
+    "postinstall": "netlify-lambda install"
   },
   "keywords": [],
   "author": "David Neal <david@reverentgeek.com> (https://reverentgeek.com)",
@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "axios": "^0.19.2",
-    "moment-timezone": "^0.5.28"
+    "moment-timezone": "^0.5.28",
+    "netlify-lambda": "^1.6.3"
   }
 }

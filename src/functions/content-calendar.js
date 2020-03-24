@@ -1,6 +1,6 @@
 "use strict";
-const client = require( "./leankit" );
-const calendar = require( "./calendar" );
+const client = require( "./utils/leankit" );
+const calendar = require( "./utils/calendar" );
 
 exports.handler = async () => {
 	try {

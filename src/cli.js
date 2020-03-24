@@ -1,8 +1,8 @@
 "use strict";
 
 require( "dotenv" ).config();
-const client = require( "./functions/content-calendar/leankit" );
-const calendar = require( "./functions/content-calendar/calendar" );
+const client = require( "./functions/utils/leankit" );
+const calendar = require( "./functions/utils/calendar" );
 
 const main = async () => {
 	try {
