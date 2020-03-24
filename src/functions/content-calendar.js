@@ -2,7 +2,7 @@
 const client = require( "./leankit" );
 const calendar = require( "./calendar" );
 
-exports.handler = async ( event, context ) => {
+exports.handler = async () => {
 	try {
 		const cards = await client.getCardsWithDates();
 		const feed = await calendar.generateCalendarFeed( cards );

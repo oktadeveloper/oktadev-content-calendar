@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "node src/cli.js"
+    "start": "node src/cli.js",
+    "prebuild": "cd src/functions/content-calendar && npm install"
   },
   "keywords": [],
   "author": "David Neal <david@reverentgeek.com> (https://reverentgeek.com)",

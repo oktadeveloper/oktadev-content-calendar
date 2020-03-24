@@ -2,7 +2,7 @@
 	"name": "content-calendar",
 	"version": "1.0.0",
 	"description": "",
-	"main": "index.js",
+	"main": "content-calendar.js",
 	"keywords": [],
 	"author": "David Neal <david@reverentgeek.com> (https://reverentgeek.com)",
 	"license": "MIT",
