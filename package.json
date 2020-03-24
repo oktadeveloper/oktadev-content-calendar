@@ -1,0 +1,20 @@
+{
+  "name": "oktadev-content-calendar",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "node src/cli.js"
+  },
+  "keywords": [],
+  "author": "David Neal <david@reverentgeek.com> (https://reverentgeek.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "eslint": "^6.8.0",
+    "eslint-config-reverentgeek": "^2.0.2"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "moment-timezone": "^0.5.28"
+  }
+}
