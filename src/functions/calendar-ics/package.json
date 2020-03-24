@@ -1,5 +1,5 @@
 {
-  "name": "calendar",
+  "name": "calendar-ics",
   "version": "1.0.0",
   "description": "calendar",
   "main": "calendar.js",
