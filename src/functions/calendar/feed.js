@@ -1,5 +1,4 @@
 "use strict";
-// https://etw4xyhz0m.execute-api.us-east-1.amazonaws.com/default/content-calendar
 
 const moment = require( "moment-timezone" );
 const stamp = moment();

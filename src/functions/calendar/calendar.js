@@ -1,6 +1,6 @@
 "use strict";
-const client = require( "./utils/leankit" );
-const calendar = require( "./utils/calendar" );
+const client = require( "./leankit" );
+const calendar = require( "./feed" );
 
 exports.handler = async () => {
 	try {
@@ -10,8 +10,7 @@ exports.handler = async () => {
 			statusCode: 200,
 			body: feed,
 			headers: {
-				"Content-Type": "text/calendar; charset=utf-8",
-				// "Content-Disposition": "Content-Disposition: attachment; filename=\"cal.ics\""
+				"Content-Type": "text/calendar; charset=utf-8"
 			} 
 		};
 	} catch ( err ) {
