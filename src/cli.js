@@ -1,13 +1,13 @@
 "use strict";
 
 require( "dotenv" ).config();
-const client = require( "./functions/utils/leankit" );
-const calendar = require( "./functions/utils/calendar" );
+const client = require( "./functions/calendar/leankit" );
+const feedGenerator = require( "./functions/calendar/feed" );
 
 const main = async () => {
 	try {
 		const cards = await client.getCardsWithDates();
-		const feed = await calendar.generateCalendarFeed( cards );
+		const feed = await feedGenerator.generateCalendarFeed( cards );
 		console.log( feed );
 	} catch ( err ) {
 		console.log( err );
