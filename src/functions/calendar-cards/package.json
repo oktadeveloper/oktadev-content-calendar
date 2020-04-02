@@ -1,8 +1,8 @@
 {
-	"name": "calendar-ics",
+	"name": "calendar-cards",
 	"version": "1.0.0",
 	"description": "calendar",
-	"main": "calendar.js",
+	"main": "calendar-cards.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
@@ -15,7 +15,6 @@
 	"author": "David Neal <david@reverentgeek.com> (https://reverentgeek.com)",
 	"license": "MIT",
 	"dependencies": {
-		"axios": "^0.19.2",
-		"moment-timezone": "^0.5.28"
+		"oktadev-leankit-client": "^1.0.0"
 	}
 }

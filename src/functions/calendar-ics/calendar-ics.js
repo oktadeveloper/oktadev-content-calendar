@@ -1,5 +1,5 @@
 "use strict";
-const client = require( "../../leankit" );
+const client = require( "oktadev-leankit-client" );
 const calendar = require( "./feed" );
 
 exports.handler = async () => {

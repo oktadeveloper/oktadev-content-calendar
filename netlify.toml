@@ -1,6 +1,7 @@
 [build]
-  functions = "functions-dist"
+  functions = "src/functions"
   NODE_ENV = "12"
+  publish = "dist"
 
 [[redirects]]
   from = "/api/*"
@@ -12,3 +13,4 @@
   to = "https://content.oktadev.dev/:splat"
   status = 301
   force = true
+

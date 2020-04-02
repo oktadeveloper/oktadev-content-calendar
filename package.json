@@ -17,9 +17,8 @@
     "parcel-bundler": "^1.12.4"
   },
   "dependencies": {
-    "@netlify/zip-it-and-ship-it": "^0.3.1",
-    "axios": "^0.19.2",
     "netlify-lambda": "^1.6.3",
+    "oktadev-leankit-client": "^1.0.0",
     "tui-calendar": "^1.12.12"
   }
 }

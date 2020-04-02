@@ -1,7 +1,7 @@
 "use strict";
 
 require( "dotenv" ).config();
-const client = require( "./leankit" );
+const client = require( "oktadev-leankit-client" );
 const feedGenerator = require( "./functions/calendar-ics/feed" );
 
 const main = async () => {
