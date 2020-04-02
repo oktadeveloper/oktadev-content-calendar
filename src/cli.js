@@ -1,8 +1,8 @@
 "use strict";
 
 require( "dotenv" ).config();
-const client = require( "./functions/calendar/leankit" );
-const feedGenerator = require( "./functions/calendar/feed" );
+const client = require( "./leankit" );
+const feedGenerator = require( "./functions/calendar-ics/feed" );
 
 const main = async () => {
 	try {

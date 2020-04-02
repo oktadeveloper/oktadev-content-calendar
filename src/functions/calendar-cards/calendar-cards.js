@@ -1,17 +1,12 @@
 "use strict";
 const client = require( "../../leankit" );
-const calendar = require( "./feed" );
 
 exports.handler = async () => {
 	try {
 		const cards = await client.getCardsWithDates();
-		const feed = await calendar.generateCalendarFeed( cards );
 		return {
 			statusCode: 200,
-			body: feed,
-			headers: {
-				"Content-Type": "text/calendar; charset=utf-8"
-			} 
+			body: cards
 		};
 	} catch ( err ) {
 		console.log( err );
