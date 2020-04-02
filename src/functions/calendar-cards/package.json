@@ -4,19 +4,18 @@
 	"description": "calendar",
 	"main": "calendar.js",
 	"scripts": {
-	  "test": "echo \"Error: no test specified\" && exit 1"
+		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"keywords": [
-	  "netlify",
-	  "serverless",
-	  "js",
-	  "leankit"
+		"netlify",
+		"serverless",
+		"js",
+		"leankit"
 	],
 	"author": "David Neal <david@reverentgeek.com> (https://reverentgeek.com)",
 	"license": "MIT",
 	"dependencies": {
-	  "axios": "^0.19.2",
-	  "moment-timezone": "^0.5.28"
+		"axios": "^0.19.2",
+		"moment-timezone": "^0.5.28"
 	}
-  }
-  
+}

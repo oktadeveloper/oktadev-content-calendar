@@ -1,5 +1,5 @@
 [build]
-  functions = "src/functions"
+  functions = "functions-dist"
   NODE_ENV = "12"
 
 [[redirects]]
