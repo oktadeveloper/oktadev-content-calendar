@@ -11,7 +11,7 @@ exports.handler = async () => {
 			body: feed,
 			headers: {
 				"Content-Type": "text/calendar; charset=utf-8"
-			} 
+			}
 		};
 	} catch ( err ) {
 		console.log( err );

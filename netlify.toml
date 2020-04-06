@@ -3,6 +3,10 @@
   NODE_ENV = "12"
   publish = "dist"
 
+[dev]
+  port = 8080
+  publish = "dist"
+
 [[redirects]]
   from = "/api/*"
   to = "/.netlify/functions/:splat"

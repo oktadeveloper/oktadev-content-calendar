@@ -6,7 +6,10 @@ exports.handler = async () => {
 		const cards = await client.getCardsWithDates();
 		return {
 			statusCode: 200,
-			body: JSON.stringify( cards )
+			body: JSON.stringify( cards ),
+			headers: {
+				"Content-Type": "application/json"
+			}
 		};
 	} catch ( err ) {
 		console.log( err );

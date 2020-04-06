@@ -9,3 +9,9 @@ node_modules
 
 # Local Netlify folder
 .netlify
+
+# Distribution folder
+dist/
+
+# cache folder
+.cache
