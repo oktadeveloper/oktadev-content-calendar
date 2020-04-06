@@ -161,7 +161,9 @@ const showPublishCalendar = () => {
 
 const showEditorialCalendar = () => {
 	calendar.clear();
-	const filteredCards = cards.filter( card => card.start );
+	const filteredCards = cards.filter( card => {
+		return card.start && ( currentFilter === "" || normalizeType( card.type ) === currentFilter );
+	} );
 	const schedules = filteredCards.map( card => createSchedule( card, card.start ) );
 	calendar.createSchedules( schedules );
 	const btn = document.getElementById( "toggleBtn" );
