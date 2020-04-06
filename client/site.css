@@ -1,8 +1,0 @@
-.tags .tag { 
-	cursor: pointer;
-	color: #ccc;
-	font-weight: normal;
-}
-.tags .active {
-	font-weight: bold;
-}
