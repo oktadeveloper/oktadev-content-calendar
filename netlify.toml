@@ -1,11 +1,11 @@
 [build]
   functions = "src/functions"
   NODE_ENV = "12"
-  publish = "dist"
+  publish = "/dist"
 
 [dev]
   port = 8080
-  publish = "dist"
+  publish = "/dist"
 
 [[redirects]]
   from = "/api/*"
