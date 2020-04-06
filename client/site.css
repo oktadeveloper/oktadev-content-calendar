@@ -1,6 +1,8 @@
-.content-type-net {
-	background-color: #CFE1E3;
+.tags .tag { 
+	cursor: pointer;
+	color: #ccc;
+	font-weight: normal;
 }
-.content-type-awareness {
-	background-color: #F8E3E2;
+.tags .active {
+	font-weight: bold;
 }

@@ -6,12 +6,19 @@
 <body>
 	<section class="section-primary">
 		<h1 id="title" class="h1">Content Calendar</h1>
-		<p>
-			<button id="toggleBtn" type="button" class="button-primary">Show Editorial Calendar</button>
-			<button id="refreshBtn" type="button" class="button-info button-round button-small">Refresh</button>
-		</p>
+		<div class="row">
+			<div class="col col-sm-4">
+				<button id="toggleBtn" type="button" class="button-primary">Show Editorial Calendar</button>
+				<button id="refreshBtn" type="button" class="button-info button-round button-small">Refresh</button>
+			</div>
+			<div class="col col-sm-8 align-right">
+				<ul id="filter" class="nav-links"></ul>
+			</div>
+		</div>
 	</section>
-	<div id="calendar"></div>
+	<section class="section">
+		<div id="calendar"></div>
+	</section>
 	<script src="./index.js"></script>
 </body>
 </html>
