@@ -4,7 +4,8 @@
   "description": "",
   "main": "dist/index.html",
   "scripts": {
-    "parcel": "node tools/build.js && parcel client/index.html",
+    "dev": "node tools/build.js && parcel client/index.html",
+    "build": "parcel build client/index.html",
     "postinstall": "netlify-lambda install"
   },
   "keywords": [],
