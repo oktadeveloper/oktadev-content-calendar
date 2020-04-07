@@ -19,8 +19,9 @@
   },
   "dependencies": {
     "axios": "^0.19.2",
-    "mustard-ui": "^1.0.4",
+    "milligram": "^1.3.0",
     "netlify-lambda": "^1.6.3",
+    "normalize.css": "^8.0.1",
     "oktadev-leankit-client": "^1.0.0",
     "parcel": "^1.12.4",
     "tui-calendar": "^1.12.12"

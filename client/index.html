@@ -4,19 +4,19 @@
 	<link rel="stylesheet" type="text/css" href="./site.css"
 </head>
 <body>
-	<section class="section-primary">
+	<section class="container">
 		<div class="row">
-			<div class="col col-sm-6">
+			<div class="column">
 				<h1 id="title" class="h1">Content Calendar</h1>
 			</div>
-			<div class="col col-sm-6 align-right">
-				<button id="toggleBtn" type="button" class="button-primary">Editorial Calendar</button>
-				<button id="refreshBtn" type="button" class="button-info button-round button-small">Refresh</button>
+			<div class="column">
+				<button id="toggleBtn" type="button" class="button">Editorial Calendar</button>
+				<button id="refreshBtn" type="button" class="button button-outline">Refresh</button>
 			</div>
 		</div>
-		<ul id="filter" class="nav-links"></ul>
+		<div id="filters" class="row"></div>
 	</section>
-	<section class="section">
+	<section class="container">
 		<div id="calendar"></div>
 	</section>
 	<script src="./index.js"></script>

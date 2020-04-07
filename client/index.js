@@ -1,6 +1,7 @@
 import axios from "axios";
 import Calendar from "tui-calendar";
-import "mustard-ui";
+import "normalize.css";
+import "milligram";
 import "tui-calendar/dist/tui-calendar.css";
 
 let publishView = true;
@@ -104,7 +105,7 @@ const showFilters = () => {
 	} );
 	console.log( types );
 
-	const tags = document.getElementById( "filter" );
+	const tags = document.getElementById( "filters" );
 
 	let child = tags.lastElementChild; 
 	while ( child ) { 
@@ -112,34 +113,26 @@ const showFilters = () => {
 		child = tags.lastElementChild; 
 	}
 
-	if ( types.length > 1 ) {
-		const li = document.createElement( "li" );
-		const a = document.createElement( "a" );
-		a.href = "#";
-		if ( currentFilter === "" ) {
-			a.classList = "active";
-		}
-		a.addEventListener( "click", function( e ) {
-			clearFilter();
+	const createFilter = ( title, click, active ) => {
+		const col = document.createElement( "div" );
+		col.classList = "filter column";
+		const button = document.createElement( "button" );
+		button.classList = active ? "button button-outline" : "button button-clear";
+		button.addEventListener( "click", function( e ) {
+			click();
 			e.preventDefault();
 		} );
-		a.appendChild( document.createTextNode( "All" ) );
-		li.appendChild( a );
-		tags.appendChild( li );
+		button.appendChild( document.createTextNode( title ) );
+		col.appendChild( button );
+		return col;
+	};
+
+	if ( types.length > 1 ) {
+		const all = createFilter( "All", clearFilter, currentFilter === "" );
+		tags.appendChild( all );
 		
 		for( const t of types ) {
-			const li = document.createElement( "li" );
-			const a = document.createElement( "a" );
-			a.href = "#";
-			if ( currentFilter === t.id ) {
-				a.classList = "active";
-			}	
-			a.addEventListener( "click", function( e ) {
-				filterCards( t.id );
-				e.preventDefault();
-			} );
-			a.appendChild( document.createTextNode( t.name ) );
-			li.appendChild( a );
+			const li = createFilter( t.name, () => filterCards( t.id ), currentFilter === t.id );
 			tags.appendChild( li );
 		}	
 	}
