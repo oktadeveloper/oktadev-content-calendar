@@ -153,7 +153,7 @@ const showPublishCalendar = () => {
 	const schedules = filteredCards.map( card => createSchedule( card, card.finish ) );
 	calendar.createSchedules( schedules );
 	const btn = document.getElementById( "toggleBtn" );
-	btn.innerHTML = "Show Editorial Calendar";
+	btn.innerHTML = "Editorial Calendar";
 	const h1 = document.getElementById( "title" );
 	h1.innerHTML = "Publish Calendar";
 	showFilters( filteredCards );
@@ -167,7 +167,7 @@ const showEditorialCalendar = () => {
 	const schedules = filteredCards.map( card => createSchedule( card, card.start ) );
 	calendar.createSchedules( schedules );
 	const btn = document.getElementById( "toggleBtn" );
-	btn.innerHTML = "Show Publish Calendar";
+	btn.innerHTML = "Publish Calendar";
 	const h1 = document.getElementById( "title" );
 	h1.innerHTML = "Editorial Calendar";
 	showFilters( filteredCards );
