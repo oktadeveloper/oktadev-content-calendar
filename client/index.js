@@ -75,13 +75,11 @@ const createSchedule = ( card, date ) => {
 };
 
 const clearFilter = () => {
-	console.log( "clearing filter" );
 	currentFilter = "";
 	showCurrentCalendar();
 };
 
 const filterCards = cardType => {
-	console.log( "filtering: " + cardType );
 	currentFilter = cardType;
 	showCurrentCalendar();
 };
@@ -104,7 +102,6 @@ const showFilters = () => {
 		}
 		return 0;
 	} );
-	console.log( types );
 
 	const tags = document.getElementById( "filters" );
 
