@@ -24,6 +24,7 @@
     "normalize.css": "^8.0.1",
     "oktadev-leankit-client": "^1.0.0",
     "parcel": "^1.12.4",
+    "roboto-fontface": "^0.10.0",
     "tui-calendar": "^1.12.12"
   },
   "browserslist": [

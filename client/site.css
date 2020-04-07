@@ -1,7 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto); 
-
 .tui-full-calendar-popup-container {
-	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bolder;
 }
 
 .calendar-actions {
