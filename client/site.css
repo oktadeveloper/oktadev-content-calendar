@@ -1,1 +1,44 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto); 
+
+.calendar-actions {
+	text-align: right;
+	margin-top: .5em;
+}
+
+#filters column { 
+	text-align: center; 
+}
+
+#filters .filter { 
+	color: #333;
+	margin-right: .5em;
+	line-height: 1.3rem;
+    padding: 1rem;
+}
+#filters .filter- {
+	background-color: #e8e8e8;
+}
+#filters .filter-awareness {
+	background-color: #F8E3E2;
+}
+#filters .filter-devops {
+	background-color: #D0CCE0;
+}
+#filters .filter-java {
+	background-color: #BFDFC2;
+}
+#filters .filter-javascript {
+	background-color: #FFF1BF;
+}
+#filters .filter-net {
+	background-color: #CFE1E3;
+}
+#filters .filter-php {
+	background-color: #B8CFDF;
+}
+#filters .filter-scotch {
+	background-color: #E4DACC;
+}
+#filters .filter-security {
+	background-color: #FAD7B2;
+}

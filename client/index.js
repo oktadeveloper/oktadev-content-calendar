@@ -3,6 +3,7 @@ import Calendar from "tui-calendar";
 import "normalize.css";
 import "milligram";
 import "tui-calendar/dist/tui-calendar.css";
+import "./site.css";
 
 let publishView = true;
 let cards = [];
@@ -113,26 +114,23 @@ const showFilters = () => {
 		child = tags.lastElementChild; 
 	}
 
-	const createFilter = ( title, click, active ) => {
-		const col = document.createElement( "div" );
-		col.classList = "filter column";
+	const createFilter = ( id, title, click, active ) => {
 		const button = document.createElement( "button" );
-		button.classList = active ? "button button-outline" : "button button-clear";
+		button.classList = active ? `button button-outline filter filter-${ id }` : `button button-clear filter filter-${ id }`;
 		button.addEventListener( "click", function( e ) {
 			click();
 			e.preventDefault();
 		} );
 		button.appendChild( document.createTextNode( title ) );
-		col.appendChild( button );
-		return col;
+		return button;
 	};
 
 	if ( types.length > 1 ) {
-		const all = createFilter( "All", clearFilter, currentFilter === "" );
+		const all = createFilter( "", "All", clearFilter, currentFilter === "" );
 		tags.appendChild( all );
 		
 		for( const t of types ) {
-			const li = createFilter( t.name, () => filterCards( t.id ), currentFilter === t.id );
+			const li = createFilter( t.id, t.name, () => filterCards( t.id ), currentFilter === t.id );
 			tags.appendChild( li );
 		}	
 	}
