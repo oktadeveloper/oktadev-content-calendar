@@ -1,8 +1,8 @@
 {
-	"name": "calendar-cards",
+	"name": "assignment-report",
 	"version": "1.0.0",
 	"description": "calendar",
-	"main": "calendar-cards.js",
+	"main": "assignment-report.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
@@ -15,6 +15,6 @@
 	"author": "David Neal <david@reverentgeek.com> (https://reverentgeek.com)",
 	"license": "MIT",
 	"dependencies": {
-		"oktadev-leankit-client": "^1.1.0"
+		"oktadev-leankit-client": "^1.2.0"
 	}
 }

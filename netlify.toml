@@ -19,4 +19,3 @@
   to = "https://content.oktadev.dev/:splat"
   status = 301
   force = true
-
