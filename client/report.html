@@ -1,0 +1,34 @@
+<html>
+<head>
+	<title>Content Report</title>
+</head>
+<body>
+	<section class="container">
+		<div class="row">
+			<div class="column">
+				<h1 id="title" class="h1">Content Report</h1>
+			</div>
+			<div class="column calendar-actions">
+				<a href="/" class="button">Calendar</a>
+			</div>
+		</div>
+	</section>
+	<section class="container">
+		<div id="app">
+			<table class="report">
+				<thead>
+					<tr><th>Type</th><th>Current</th><th>Required</th></tr>
+				</thead>
+				<tbody>
+					<tr v-for="assignment in assignments" :class="{ alarm : assignment.isBelowThreshold }">
+						<td>{{ assignment.name }}</td>
+						<td>{{ assignment.count }}</td>
+						<td>{{ assignment.required }}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</section>
+	<script src="./report.js"></script>
+</body>
+</html>
