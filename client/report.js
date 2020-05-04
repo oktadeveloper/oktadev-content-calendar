@@ -5,6 +5,15 @@ import "normalize.css";
 import "milligram";
 import "./site.css";
 
+const contentTypes = {
+	"DevOps": 5,
+	"Java": 5,
+	"PHP": 5,
+	".NET": 5,
+	"JavaScript": 5,
+	"Security": 5
+};
+
 new Vue( {
 	el: "#app",
 	data: {
@@ -14,14 +23,18 @@ new Vue( {
 		axios.get( "/api/assignment-report" )
 			.then( res => {
 				const cards = res.data;
-				this.assignments = cards.map( card => {
-					return {
-						name: card.name,
-						count: card.count,
-						required: 5,
-						isBelowThreshold: card.count < 5
-					};
-				} );
+				this.assignments = cards
+					.filter( card => {
+						return contentTypes[card.name];
+					} )
+					.map( card => {
+						return {
+							name: card.name,
+							count: card.count,
+							required: contentTypes[card.name],
+							isBelowThreshold: card.count < contentTypes[card.name]
+						};
+					} );
 			} );
 	}
 } );
