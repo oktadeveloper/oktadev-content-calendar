@@ -17,18 +17,18 @@
   },
   "devDependencies": {
     "dotenv": "^8.2.0",
-    "eslint": "^6.8.0",
-    "eslint-config-reverentgeek": "^2.2.0",
-    "fs-extra": "^9.0.0",
-    "netlify-cli": "^2.48.0"
+    "eslint": "^7.4.0",
+    "eslint-config-reverentgeek": "^3.0.0",
+    "fs-extra": "^9.0.1",
+    "netlify-cli": "^2.58.0"
   },
   "dependencies": {
     "axios": "^0.19.2",
     "commander": "^5.1.0",
-    "milligram": "^1.3.0",
+    "milligram": "^1.4.1",
     "netlify-lambda": "^1.6.3",
     "normalize.css": "^8.0.1",
-    "oktadev-leankit-client": "^1.2.0",
+    "oktadev-leankit-client": "^1.2.1",
     "parcel": "^1.12.4",
     "roboto-fontface": "^0.10.0",
     "tui-calendar": "^1.12.13",
