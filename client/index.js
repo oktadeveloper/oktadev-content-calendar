@@ -23,11 +23,11 @@ const createCalendar = () => {
 		useDetailPopup: true,
 		scheduleView: "allday"
 	} );
-	c.setOptions( { 
+	c.setOptions( {
 		month: {
 			visibleWeeksCount: 8,
 			workweek: true
-		} 
+		}
 	} );
 	return c;
 };
@@ -55,6 +55,8 @@ const cardTypeColor = ( cardType ) => {
 		return "#E4DACC";
 	case "security":
 		return "#FAD7B2";
+	case "twitch":
+		return "#DA78FB";
 	default:
 		return "#FFFFFFd";
 	}
@@ -106,10 +108,10 @@ const showFilters = () => {
 
 	const tags = document.getElementById( "filters" );
 
-	let child = tags.lastElementChild; 
-	while ( child ) { 
-		tags.removeChild( child ); 
-		child = tags.lastElementChild; 
+	let child = tags.lastElementChild;
+	while ( child ) {
+		tags.removeChild( child );
+		child = tags.lastElementChild;
 	}
 
 	const createFilter = ( id, title, click, active ) => {
@@ -126,11 +128,11 @@ const showFilters = () => {
 	if ( types.length > 1 ) {
 		const all = createFilter( "", "All", clearFilter, currentFilter === "" );
 		tags.appendChild( all );
-		
+
 		for( const t of types ) {
 			const li = createFilter( t.id, t.name, () => filterCards( t.id ), currentFilter === t.id );
 			tags.appendChild( li );
-		}	
+		}
 	}
 };
 

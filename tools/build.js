@@ -4,7 +4,7 @@ const fs = require( "fs-extra" );
 
 const cleanFolder = async ( folderPath ) => {
 	await fs.emptyDir( folderPath );
-	console.log( "cleaned folder", folderPath );	
+	console.log( "cleaned folder", folderPath );
 };
 
 ( async () => {

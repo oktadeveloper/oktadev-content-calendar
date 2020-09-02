@@ -17,22 +17,22 @@
   },
   "devDependencies": {
     "dotenv": "^8.2.0",
-    "eslint": "^7.4.0",
+    "eslint": "^7.8.1",
     "eslint-config-reverentgeek": "^3.0.0",
     "fs-extra": "^9.0.1",
-    "netlify-cli": "^2.58.0"
+    "netlify-cli": "^2.61.0"
   },
   "dependencies": {
     "axios": "^0.19.2",
     "commander": "^5.1.0",
     "milligram": "^1.4.1",
-    "netlify-lambda": "^1.6.3",
+    "netlify-lambda": "^2.0.1",
     "normalize.css": "^8.0.1",
     "oktadev-leankit-client": "^1.2.1",
     "parcel": "^1.12.4",
     "roboto-fontface": "^0.10.0",
     "tui-calendar": "^1.12.13",
-    "vue": "^2.6.11"
+    "vue": "^2.6.12"
   },
   "browserslist": [
     "last 1 Chrome versions"
