@@ -44,6 +44,9 @@
 #filters .filter-security {
 	background-color: #FAD7B2;
 }
+#filters .filter-twitch {
+	background-color: #DA78FB;
+}
 
 .report .alarm {
 	background-color: #fff1464f;
