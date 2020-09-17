@@ -17,14 +17,14 @@
   },
   "devDependencies": {
     "dotenv": "^8.2.0",
-    "eslint": "^7.8.1",
+    "eslint": "^7.9.0",
     "eslint-config-reverentgeek": "^3.0.0",
     "fs-extra": "^9.0.1",
-    "netlify-cli": "^2.61.0"
+    "netlify-cli": "^2.63.2"
   },
   "dependencies": {
-    "axios": "^0.19.2",
-    "commander": "^5.1.0",
+    "axios": "^0.20.0",
+    "commander": "^6.1.0",
     "milligram": "^1.4.1",
     "netlify-lambda": "^2.0.1",
     "normalize.css": "^8.0.1",

@@ -3,9 +3,9 @@ const client = require( "oktadev-leankit-client" );
 
 const unassignedCardsByType = async () => {
 	const board = await client.board();
-	const assignmentsLane = board.lanes.find( lane => lane.name === "Assignments" );
+	const assignmentsLane = board.lanes.find( lane => lane.name === "Topics Available" );
 	if ( !assignmentsLane ) {
-		throw new Error( "Assignments lane not found. Was it renamed?" );
+		throw new Error( "Topics Available lane not found. Was it renamed?" );
 	}
 	const cardTypes = board.cardTypes
 		.filter( ct => ct.name !== "Subtask" && ct.name !== "Issue" && ct.name !== "Other Work" )
