@@ -6,12 +6,11 @@ import "milligram";
 import "./site.css";
 
 const contentTypes = {
-	"DevOps": 5,
-	"Java": 5,
-	"PHP": 5,
+	DevOps: 5,
+	Java: 5,
+	PHP: 5,
 	".NET": 5,
-	"JavaScript": 5,
-	"Security": 5
+	JavaScript: 5
 };
 
 new Vue( {
