@@ -47,6 +47,12 @@
 #filters .filter-twitch {
 	background-color: #DA78FB;
 }
+#filters .filter-python {
+	background-color: #68C9FF;
+}
+#filters .filter-go {
+	background-color: #85E6F1;
+}
 
 .report .alarm {
 	background-color: #fff1464f;

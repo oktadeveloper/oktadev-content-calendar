@@ -57,8 +57,12 @@ const cardTypeColor = ( cardType ) => {
 		return "#FAD7B2";
 	case "twitch":
 		return "#DA78FB";
+	case "python":
+		return "#68C9FF";
+	case "go":
+		return "#85E6F1";
 	default:
-		return "#FFFFFFd";
+		return "#FFFFFF";
 	}
 };
 
