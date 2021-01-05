@@ -23,7 +23,7 @@
     "netlify-cli": "^2.63.2"
   },
   "dependencies": {
-    "axios": "^0.20.0",
+    "axios": "^0.21.1",
     "commander": "^6.1.0",
     "milligram": "^1.4.1",
     "netlify-lambda": "^2.0.1",
